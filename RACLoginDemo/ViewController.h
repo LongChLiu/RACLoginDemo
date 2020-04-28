@@ -7,15 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LoginViewModel.h"
+
 
 @interface ViewController : UIViewController
 
-@property(strong,nonatomic)UITextField* usernameInput;
-@property(strong,nonatomic)UITextField* passwordInput;
-@property(strong,nonatomic)UIButton* loginBtn;
-@property(strong,nonatomic)UIActivityIndicatorView* indicatorView;
-@property(strong,nonatomic)LoginViewModel* viewModel;
+
 
 @end
 

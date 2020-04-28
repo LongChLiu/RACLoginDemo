@@ -17,6 +17,10 @@
 		842A344C2455C235008E572E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A344B2455C235008E572E /* main.m */; };
 		842A34542455C5BA008E572E /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A34532455C5BA008E572E /* LoginViewModel.m */; };
 		842A34572455C833008E572E /* NetWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A34562455C833008E572E /* NetWorker.m */; };
+		842A345B245705E0008E572E /* LoginPartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A345A245705E0008E572E /* LoginPartVC.m */; };
+		842A345E24570723008E572E /* NavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A345D24570723008E572E /* NavigationVC.m */; };
+		842A346324570AC8008E572E /* OrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A346224570AC8008E572E /* OrderVC.m */; };
+		842A346724570D08008E572E /* SubmitOrderHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 842A346624570D08008E572E /* SubmitOrderHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,14 @@
 		842A34532455C5BA008E572E /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		842A34552455C833008E572E /* NetWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorker.h; sourceTree = "<group>"; };
 		842A34562455C833008E572E /* NetWorker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorker.m; sourceTree = "<group>"; };
+		842A3459245705E0008E572E /* LoginPartVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginPartVC.h; sourceTree = "<group>"; };
+		842A345A245705E0008E572E /* LoginPartVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginPartVC.m; sourceTree = "<group>"; };
+		842A345C24570723008E572E /* NavigationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationVC.h; sourceTree = "<group>"; };
+		842A345D24570723008E572E /* NavigationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationVC.m; sourceTree = "<group>"; };
+		842A346124570AC8008E572E /* OrderVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderVC.h; sourceTree = "<group>"; };
+		842A346224570AC8008E572E /* OrderVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderVC.m; sourceTree = "<group>"; };
+		842A346524570D08008E572E /* SubmitOrderHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubmitOrderHandler.h; sourceTree = "<group>"; };
+		842A346624570D08008E572E /* SubmitOrderHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubmitOrderHandler.m; sourceTree = "<group>"; };
 		CEB36EE0F6799279C85CDBEC /* Pods-RACLoginDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACLoginDemo.release.xcconfig"; path = "Target Support Files/Pods-RACLoginDemo/Pods-RACLoginDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D3282D0F5414A04948BB904A /* libPods-RACLoginDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RACLoginDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -74,16 +86,16 @@
 		842A34382455C22F008E572E /* RACLoginDemo */ = {
 			isa = PBXGroup;
 			children = (
+				842A345F24570A9A008E572E /* OrderPart */,
+				842A34582457058D008E572E /* LoginPart */,
 				842A34392455C22F008E572E /* AppDelegate.h */,
 				842A343A2455C22F008E572E /* AppDelegate.m */,
 				842A343C2455C22F008E572E /* SceneDelegate.h */,
 				842A343D2455C22F008E572E /* SceneDelegate.m */,
 				842A343F2455C22F008E572E /* ViewController.h */,
 				842A34402455C22F008E572E /* ViewController.m */,
-				842A34522455C5BA008E572E /* LoginViewModel.h */,
-				842A34532455C5BA008E572E /* LoginViewModel.m */,
-				842A34552455C833008E572E /* NetWorker.h */,
-				842A34562455C833008E572E /* NetWorker.m */,
+				842A345C24570723008E572E /* NavigationVC.h */,
+				842A345D24570723008E572E /* NavigationVC.m */,
 				842A34422455C22F008E572E /* Main.storyboard */,
 				842A34452455C235008E572E /* Assets.xcassets */,
 				842A34472455C235008E572E /* LaunchScreen.storyboard */,
@@ -91,6 +103,46 @@
 				842A344B2455C235008E572E /* main.m */,
 			);
 			path = RACLoginDemo;
+			sourceTree = "<group>";
+		};
+		842A34582457058D008E572E /* LoginPart */ = {
+			isa = PBXGroup;
+			children = (
+				842A34522455C5BA008E572E /* LoginViewModel.h */,
+				842A34532455C5BA008E572E /* LoginViewModel.m */,
+				842A34552455C833008E572E /* NetWorker.h */,
+				842A34562455C833008E572E /* NetWorker.m */,
+				842A3459245705E0008E572E /* LoginPartVC.h */,
+				842A345A245705E0008E572E /* LoginPartVC.m */,
+			);
+			path = LoginPart;
+			sourceTree = "<group>";
+		};
+		842A345F24570A9A008E572E /* OrderPart */ = {
+			isa = PBXGroup;
+			children = (
+				842A346424570C8D008E572E /* ViewModel */,
+				842A346024570AB6008E572E /* VC */,
+			);
+			path = OrderPart;
+			sourceTree = "<group>";
+		};
+		842A346024570AB6008E572E /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				842A346124570AC8008E572E /* OrderVC.h */,
+				842A346224570AC8008E572E /* OrderVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		842A346424570C8D008E572E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				842A346524570D08008E572E /* SubmitOrderHandler.h */,
+				842A346624570D08008E572E /* SubmitOrderHandler.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		9582BB3B6B00D8775B5AA04A /* Frameworks */ = {
@@ -208,8 +260,12 @@
 			files = (
 				842A34412455C22F008E572E /* ViewController.m in Sources */,
 				842A343B2455C22F008E572E /* AppDelegate.m in Sources */,
+				842A345E24570723008E572E /* NavigationVC.m in Sources */,
+				842A346724570D08008E572E /* SubmitOrderHandler.m in Sources */,
 				842A344C2455C235008E572E /* main.m in Sources */,
 				842A34542455C5BA008E572E /* LoginViewModel.m in Sources */,
+				842A346324570AC8008E572E /* OrderVC.m in Sources */,
+				842A345B245705E0008E572E /* LoginPartVC.m in Sources */,
 				842A343E2455C22F008E572E /* SceneDelegate.m in Sources */,
 				842A34572455C833008E572E /* NetWorker.m in Sources */,
 			);
